@@ -1,3 +1,4 @@
+var vid = document.getElementById("mivideo"); 
 var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
       effect: 'fade',
@@ -9,5 +10,13 @@ var swiper = new Swiper('.blog-slider', {
       pagination: {
         el: '.blog-slider__pagination',
         clickable: true,
+         
       }
     });
+
+function pausa(){
+  vid.pause();
+}
+document.getElementById("slider").onwheel = function (){
+pausa();
+}

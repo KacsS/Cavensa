@@ -40,7 +40,7 @@
     <br>
     <br>
 
-    <div class="blog-slider">
+    <div class="blog-slider" id="slider">
         <br>
   <div class="blog-slider__wrp swiper-wrapper">
 
@@ -60,18 +60,18 @@
 
     <div class="blog-slider__item swiper-slide">
       <div class="blog-slider__img">
-        <img src="../Atssets/Sources/Images/n1.webp" alt="" style="width: 350px; height: 300px;">
+        <img src="../Atssets/Sources/Images/n1.webp" alt="" style="width: 100%; height: 100%;">
       </div>
       <div class="blog-slider__content">
         <span class="blog-slider__code"><b>Nuestra actualidad</b></span>
         <div class="blog-slider__title"><b style="color:rgb(116, 233, 112);"><h3>Somos CAVENSA</h3></b></div>
-        <div class="blog-slider__text"><video src="../Atssets/Sources/Videos/nosotros.mp4" controls style="width: 510px;"></video></div>
+        <div class="blog-slider__text"><video id="mivideo" src="../Atssets/Sources/Videos/nosotros.mp4" controls style="width: 440px;height:300px"></video></div>
       </div>
     </div>
 
         <div class="blog-slider__item swiper-slide">
       <div class="blog-slider__img">
-        <img src="../Atssets/Sources/Images/IMG_9940.jpg" alt="">
+        <img src="../Atssets/Sources/Images/IMG_9940.jpg" alt="" style="width: 100%;height: 100%;">
       </div>
       <div class="blog-slider__content">
         <span class="blog-slider__code"><b>Nos esforzamos por tener la</b></span>
@@ -85,7 +85,7 @@
     
     <div class="blog-slider__item swiper-slide">
       <div class="blog-slider__img">
-        <img src="../Atssets/Sources/Images/IMG_9842.jpg" alt="">
+        <img src="../Atssets/Sources/Images/IMG_9842.jpg" alt="" style="width: 100%;height: 100%;">
       </div>
       <div class="blog-slider__content">
         <span class="blog-slider__code"><b>Con la mirada puesta en el futuro</b></span>
@@ -102,23 +102,20 @@
         <span class="blog-slider__code"><b>Con bases solidas</b></span>
         <div class="blog-slider__title"><b style="color:rgb(116, 233, 112);"><h3>VALORES</h3></b></div>
         <div class="blog-slider__text">
-          <ul>
-            <li>
-              <p>Compromiso</p>
-              <p>Responsabilidad</p>
-              <p>Esfuerzo</p>
-              <p>Eficiencia</p>
-              <p>Calidad</p>
-              <p>Competencia</p>
-            </li>
-          </ul>
+            <div style="text-align: left;">
+                <h3>Compromiso  <span style="margin-left: 200px;"><img src="../Atssets/Sources/Images/hands_handshake_icon_194812.png"></span></h3>
+                <h3>Responsabilidad</h3>
+                <h3>Esfuerzo <span style="margin-left: 237px;"><img src="../Atssets/Sources/Images/if-advantage-teamwork-1034367_88840.png"></span></h3>
+                <h3>Eficiencia </h3>
+                <h3>Calidad <span style="margin-left: 250px;"><img src="../Atssets/Sources/Images/calendar_clock_schedule_icon-icons.com_51085.png" alt=""></span></h3>
+                <h3>Competencia</h3>
+            </div>
         </div>
-        
       </div>
     </div>
     
   </div>
-  <div class="blog-slider__pagination"></div>
+  <div class="blog-slider__pagination" onclick="pausa();"></div>
 </div>
 
     
