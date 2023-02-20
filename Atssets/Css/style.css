@@ -9,8 +9,9 @@
     list-style: none;
 
 }
-body{
+html, body{
     background: linear-gradient(145deg, #e9e9e9 0%, #f4ffea 100%);
+    overflow-x: hidden;
 }
 main{
     position: relative;
@@ -150,7 +151,7 @@ header .navbar li a{
 }
 
 .content .imgBox img{
-    max-width: 900px;
+    max-width: 700px;
     
 }
 
@@ -217,6 +218,10 @@ header .navbar li a{
         flex-direction: column;
     }
 
+    .circulo{
+        clip-path: circle(440px  at right 800px);
+        animation: move-up6 3s ease-in infinite alternate-reverse;
+    }
     .content .textBox,
     .content .imgBox{
         font-size: 0.80rem;
@@ -253,7 +258,7 @@ header .navbar li a{
     transform: translateY(5px);
     }
     #menu-icon i{
-      
+
         display: block;
         
       }
