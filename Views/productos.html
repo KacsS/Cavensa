@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estiloproductos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#"  ><img class="logo" height="60px" src="img/cavensa.png" alt=""></a>
+            <ul class="navbar">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu">
+                <div  id="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+        </header>
+            <div class="contenedor">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video width="320" height="240" src="img/vertical3.mp4" type="video/mp4" onclick="pausarReproducir('video1')" id="video1"></video>
+                        </div>
+                            <div class="swiper-slide">
+                                <video width="320" height="240" src="img/vertical4.mp4" type="video/mp4" onclick="pausarReproducir('video2')" id="video2"></video>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev" id="swiperPrev" onclick="restartVideo('video2')"></div>
+                        <div class="swiper-button-next" id="swiperNext" onclick="restartVideo('video1')"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>    
+                
+            <div class="contenedorP">
+                <h3 class="subtitulo">Nuestros productos</h3>
+                <div class="contenedor-productos">
+                
+                
+                <div class="producto" data-name="p-1">
+                    <img src="img/doblerosca_e1.png" alt="">
+                    <h3>Esparragos Doble Rosca Estándar</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-2">
+                    <img src="img/doblerosca_s1.png" alt="">
+                    <h3>Esparragos Doble Rosca Sobremedida</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-3">
+                    <img src="img/tornillos1.png" alt="">
+                    <h3>Tornillos</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-4">
+                    <img src="img/conos_ne1.png" alt="">
+                    <h3>Conos</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-5">
+                    <img src="img/tuercas1.png" alt="">
+                    <h3>Tuercas</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-6">
+                    <img src="img/guia_resorte2.png" alt="">
+                    <h3>Guías de resorte</h3>
+    
+                </div>
+
+                <div class="producto" data-name="p-7">
+                    <img src="img/torre_bujia1.png" alt="">
+                    <h3>Torre de bujia</h3>
+    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </main>
+    <footer>
+       
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="funciones.js"></script>
+    <script>
+
+        var video1 = document.getElementById('video1');
+        var video2 = document.getElementById('video2');
+        function pausarReproducir(value){
+            if(value == 'video2'){
+                if(video2.paused){
+                    video2.play();
+                }else{
+                    video2.pause();
+                }
+            }else{
+                
+                if(value = 'video1'){
+                    if(video1.paused){
+                        video1.play();
+                    }else{
+                        video1.pause();
+                    }
+                }
+            }
+        }
+
+        function restartVideo(value){
+            var i = swiper.activeIndex;
+            if (i == 0){
+                video1.pause();
+                video1.currentTime = 0;
+            }else{
+                if(i == 1){
+                    video2.pause();
+                    video2.currentTime = 0;
+                }
+            }
+            // if(value == 'video2'){
+            //     video2.pause();
+            //     video2.currentTime = 0;
+            // }else{
+            //     if(value == 'video1'){
+            //         video1.pause();
+            //         video1.currentTime = 0;
+            //     }
+            // }
+        }
+    </script>
+
+</body>
+</html>
