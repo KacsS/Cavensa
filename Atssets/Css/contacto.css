@@ -1,17 +1,21 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  
-}
-header{
-    position: relative !important;
-}
 .container {
-    margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 110px;
     width: 80%;
     padding: 30px 60px 40px 40px;
     border-radius: 6px;
@@ -64,8 +68,8 @@ header{
 }
 
 .contents .left-side .details .text-one,
-.content .left-side .details .text-two,
-.content .left-side .details .text-three {
+.contents .left-side .details .text-two,
+.contents .left-side .details .text-three {
     font-size: 13px;
     color: #afafb6;
 
@@ -126,11 +130,18 @@ header{
     background-color: #5029bc;
 } */
 
+
+
+/* .right-side .button input[type="button"]:hover {
+    background-color: #5029bc;
+} */
+
 @media (max-width: 952px) {
     .container {
         width: 80%;
         padding: 30px 35px 40px 35px;
         margin-top: 20%;
+        z-index: 1;
     }
     
 }
@@ -139,7 +150,7 @@ header{
     .container {
         margin: 40px 40px;
         height: 100%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .container .contents {
         flex-direction: column-reverse;
