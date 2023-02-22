@@ -16,3 +16,4 @@ function cambioColor(color){
     const circulo = document.querySelector('.circulo');
     circulo.style.background = color;
 }
+//prueba
