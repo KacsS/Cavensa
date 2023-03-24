@@ -53,6 +53,6 @@ $(document).ready(function () {
             }
         },
         scrollY: 350,
-        lengthMenu: [ [22, 25, -1], [10, 25, "All"] ],
+        lengthMenu: [ [21, 25, -1], [10, 25, "All"] ],
     });
 });
