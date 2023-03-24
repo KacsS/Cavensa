@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cavensa - Guia de Resortes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="assets/img/Cavensa Logo.png" rel="icon">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/products-details.css" rel="stylesheet">
+  <link href="assets/vendor/package/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+
+<body onload="validacion()">
+
+  <div class="modal" id="solicitar" aria-hidden="true" tabindex="-1" role="dialog">
+    <div class="modal-dialog d-flex justify-content-center">
+      <div class="modal-content w-75">
+        <form class="form-horizontal" method="POST">
+          <div class="modal-header">
+            <h5 id="tituloModal" class="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <input type="text" id="producto" name="producto" value="guiaResorte" hidden>
+            <input type="text" id="subject" name="subject" value="" hidden>
+            <input id="name" pattern="[a-zA-Z][a-zA-Z ]+" name="name" type="text" class="form-control" onkeyup="validacion()" placeholder="Nombre" required>
+            <br>
+            <input pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="email" name="email" type="email" class="form-control" onkeyup="validacion()" placeholder="Email" required>
+            <br>
+            <textarea name="message" class="form-control" id="message" onkeyup="validacion()" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <span onclick="boton()">
+              <button id="enviar" type="submit" onclick="enviarMail()" class="btn btn-primary">Enviar</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/Cavensa Logo.png" alt="">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html" class="active">Productos</a></li>
+         <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Detalles del Producto</h2>
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li>Guías de Resorte</li>
+        </ol>
+
+      </div>
+    </div>
+    <section id="producto-detalles" class="producto-detalles">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="position-relative h-100">
+          <div class="slides-1 portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="assets/img/guia_resorte1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/guia_resorte2.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <!-- <div class="col-lg-8">
+            <button class="col-lg-3 table-btns table-btn-mm" type="submit" id="a">Milímetros</button>
+            <button class="col-lg-3 table-btns table-btn-pg" type="submit" id="b">Pulgadas</button>
+          </div> -->
+          <h2>Guías de Resorte</h2>
+          <div class="col-lg-8">
+            <table class="table table-striped">
+              <thead class="t-head">
+                <tr>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Medidas</th>
+                  <th scope="col">Rosca</th>
+                </tr>
+              </thead>
+              <tbody id="your-table-body-id">
+                <tr>
+                  <td>Guía de Resorte 3/8"</td>
+                  <td>x6" x8" x10"</td>
+                  <td>24H</td>
+                </tr>
+                <tr>
+                  <td>Guía de Resorte 7/16"</td>
+                  <td>x6" x8" x10"</td>
+                  <td>20H</td>
+                </tr>
+                <tr>
+                  <td>Guía de Resorte 1/2"</td>
+                  <td>x10" x12"</td>
+                  <td>20H</td>
+                </tr>
+                <tr>
+                  <td>Tuerca para Guía</td>
+                  <td>3/8"</td>
+                  <td>24H</td>
+                </tr>
+                <tr>
+                  <td>Tuerca para Guía</td>
+                  <td>7/16"</td>
+                  <td>20H</td>
+                </tr>
+                <tr>
+                  <td>Tuerca para Guía</td>
+                  <td>1/2"</td>
+                  <td>20H</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="portfolio-info">
+              <h3>INFORMACIÓN DEL PRODUCTO</h3>
+              <ul>
+                <li><strong>Nombre</strong> <span class="nombre-producto">Guías de <span class="color-span">Resorte</span></span></li>
+                <!-- <li><a href="#" class="btn-visit align-self-start">Solicitar Lista con las Medidas</a></li>
+                <li><a href="#" class="btn-visit align-self-start">Solicitar Lista de Precios</a></li> -->
+                <li><a data-bs-toggle="modal" data-bs-target="#solicitar" class="table-btns table-btn-pg" onclick="titulo('medidas')">Solicitar lista de medidas</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#solicitar" class="table-btns table-btn-pg" onclick="titulo('precios')">Solicitar lista de precios</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Cavensa<span>.</span></h3>
+              <h4 class="subtitulo">Calibrados de Venezuela</h4>
+              <p>
+                Calle 30 entre carreras 4 y 5, <br>
+                galpón Nº. 63. Zona industrial I<br><br>
+                <strong>Teléfonos:</strong> +58-251-237.39.55<br>&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;+58-251-237.17.62<br><br>
+                <strong>Email:</strong> cavensa.bqto@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Acceso rápido</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="acerca.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="detalle-servicios.html">Pavonado</a></li>
+              <li><a href="detalle-servicios.html">Galvanizado</a></li>
+              <li><a href="detalle-servicios.html">Mecanizado a piezas de medida</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Productos</h4>
+            <ul>
+              <li><a href="esparragosEstandar.html">Espárragos Doble Rosca Estándar</a></li>
+              <li><a href="tornillos.html">Tornillos</a></li>
+              <li><a href="tuercas.html">Tuercas</a></li>
+              <li><a href="productos.html">Más</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Cavensa</span></strong>. Todos los derechos resevado.
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="assets/js/array.js"></script>
+  <script src="assets/js/contacto.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/package/dist/sweetalert2.min.js"></script>
+
+</body>
+
+</html>

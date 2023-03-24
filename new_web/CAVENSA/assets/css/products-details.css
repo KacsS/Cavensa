@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins&display=swap');
+
+.title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.table{
+    font-family: 'Poppins', sans-serif;
+}
+
+.table-btns {
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.table-btn-mm {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+    margin-right: 20px;
+}
+
+.table-btn-mm:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.table-btn-pg {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.table-btn-pg:hover {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.nombre-producto {
+    font-weight: 800;
+}
+
+.t-head {
+    background-color: var(--color-primary);
+}
+
+.color-span {
+    color: var(--color-primary);
+}
+
+.cmb-box {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+    margin-right: 20px;
+    cursor: pointer;
+}

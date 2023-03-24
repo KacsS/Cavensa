@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cavensa - Detalles de Servicios</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="assets/img/Cavensa Logo.png" rel="icon">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/package/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body onload="validacion()">
+
+  <div class="modal" id="solicitar" aria-hidden="true" tabindex="-1" role="dialog">
+    <div class="modal-dialog d-flex justify-content-center">
+      <div class="modal-content w-75">
+        <form class="form-horizontal" method="POST">
+          <div class="modal-header">
+            <h5 id="tituloModal" class="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <input type="text" id="subject" name="subject" value="" hidden>
+            <input id="name" pattern="[a-zA-Z][a-zA-Z ]+" name="name" type="text" class="form-control" onkeyup="validacion()" placeholder="Nombre" required>
+            <br>
+            <input pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="email" name="email" type="email" class="form-control" onkeyup="validacion()" placeholder="Email" required>
+            <br>
+            <textarea name="message" class="form-control" id="message" onkeyup="validacion()" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <span onclick="boton()">
+              <button id="enviar" onclick="enviarMail()" type="button" class="btn btn-primary">Enviar</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/Cavensa Logo.png" alt="">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Nosotros</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Detalles de Servicios</h2>
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li>Detalles de servicios</li>
+        </ol>
+
+      </div>
+    </div>
+
+    <section id="servicio-detalles" class="servicio-detalles">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+              <a href="#Pavonizado" class="active">Pavonado</a>
+              <a href="#Galvanizado">Galvanizado</a>
+              <a href="#Mecanizado">Mecanizado de piezas a medida</a>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="assets/img/Pavonado.jpg" alt="" class="img-fluid services-img">
+            <h3 id="Pavonado">Pavonado</h3>
+            <p>
+              El pavonado consiste en la generación de una capa superficial de magnetita, óxido ferroso-diférrico (Fe3O4), alrededor de las piezas de acero para mejorar su aspecto, evitar su corrosión. El desgaste y deterioro del pavonado, es uno de los “males menores” que con más frecuencia suelen afectar al metal ferroso.
+            </p>
+            <p>
+              Este proceso de pavonado se lleva a cabo en horno, el proceso es necesario llevar a cabo la minuciosa limpieza de las piezas metálicas para desprenderles la herrumbre y suciedad. utilizar una solución de barniz de aceite en gasolina. Luego de este paso, las piezas metálicas se colocan sobre una malla de hierro y se introducen en el horno a temperaturas de 400 °C alrededor de 10 minutos, con lo que termina el proceso.
+            </p>
+            <div class="watch-video d-flex align-items-center position-relative">
+              <i class="bi bi-mailbox"></i>
+              <a data-bs-toggle="modal" data-bs-target="#solicitar" class="table-btns table-btn-pg" onclick="titulo('pavonado')">Deseo obtener más información a mi correo</a>
+            </div>
+            <br>
+            <hr>
+
+            <img src="assets/img/Galvanizado.jpg" alt="" class="img-fluid services-img">
+            <h3 id="Galvanizado">Galvanizado</h3>
+            <p>
+              Tambien conocido como Zincado, es un proceso electroquímico a traves de la inmersión de las piezas a un baño químico que adhiere una capa de zinc al acero para protegerlo.
+            </p>
+            <p>
+              Este es el método de recubrimiento electrolítico de acero más utilizado, que garantiza una protección razonable contra la corrosión y una apariencia agradable de las piezas a un coste bajo. El recubrimiento también se usa para mejorar las propiedades de corrosión y la persistencia de la pintura.
+            </p>
+            <p>Disponibles para procesar en color blanco o amarillo.</p>
+            <div class="watch-video d-flex align-items-center position-relative">
+              <i class="bi bi-mailbox"></i>
+              <a data-bs-toggle="modal" data-bs-target="#solicitar" class="table-btns table-btn-pg" onclick="titulo('galvanizado')">Deseo obtener más información a mi correo</a>
+            </div>
+            <br>
+            <hr>
+
+            <img src="assets/img/mecanizado.jpg" alt="" class="img-fluid services-img">
+            <h3 id="Mecanizado">Mecanizado de piezas a medida</h3>
+            <p>
+              El mecanizado consiste en el proceso de fabricación de una que engloba un conjunto de operaciones de transformación una materia a través de la separación y eliminación del material.
+            </p>
+            <p>
+              Esta conformación de la pieza en el proceso de mecanizado, con las que contamos, puede ser por abrasión, por arranque de viruta o, al contrario, sin arranque de viruta para darle una forma y tamaño final deseados a un lote de piezas a medida que sea de interés para el cliente.
+            </p>
+            <div class="watch-video d-flex align-items-center position-relative">
+              <i class="bi bi-mailbox"></i>
+              <a data-bs-toggle="modal" data-bs-target="#solicitar" class="table-btns table-btn-pg" onclick="titulo('mecanizado')">Deseo obtener más información a mi correo</a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Cavensa<span>.</span></h3>
+              <h4 class="subtitulo">Calibrados de Venezuela</h4>
+              <p>
+                Calle 30 entre carreras 4 y 5, <br>
+                galpón Nº. 63. Zona industrial I<br><br>
+                <strong>Teléfonos:</strong> +58-251-237.39.55<br>&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;+58-251-237.17.62<br><br>
+                <strong>Email:</strong> cavensa.bqto@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Acceso rápido</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="acerca.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="detalle-servicios.html">Pavonado</a></li>
+              <li><a href="detalle-servicios.html">Galvanizado</a></li>
+              <li><a href="detalle-servicios.html">Mecanizado a piezas de medida</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Productos</h4>
+            <ul>
+              <li><a href="esparragosEstandar.html">Espárragos Doble Rosca Estándar</a></li>
+              <li><a href="tornillos.html">Tornillos</a></li>
+              <li><a href="tuercas.html">Tuercas</a></li>
+              <li><a href="productos.html">Más</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Cavensa</span></strong>. Todos los derechos resevado.
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="assets/js/contacto.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/package/dist/sweetalert2.min.js"></script>
+
+</body>
+
+</html>
