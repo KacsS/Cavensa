@@ -129,32 +129,37 @@
 
         <div class="row justify-content-between gy-4 mt-4">
           <div class="col-lg-8">
-            <h2 class="title">Tuercas</h2>
-            <select class="table-btns cmb-box" onchange="listar();" id="list">
-              <option value="hexagonal">Tuerca hexagonal</option>
-              <option value="baja">Tuerca plana baja</option>
-              <option value="ranurada">Tuerca ranurada</option>
-              <option value="conica">Tuerca cónica</option>
-              <option value="pinon">Tuerca de seguridad tipo piñón</option>
-              <option value="botella">Tuerca de seguridad tipo botella</option>
-            </select>
-            <button class="col-lg-3 table-btns table-btn-mm" type="submit" id="a">Milímetros</button>
-            <button class="col-lg-3 table-btns table-btn-pg" type="submit" id="b">Pulgadas</button>
+            <h1><u>Tuercas</u></h1>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tuerca hexagonal</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tuerca plana baja</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tuerca ranurada</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Tuerca cónica</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success" id="pills-seguridad-tab" data-bs-toggle="pill" data-bs-target="#pills-seguridad" type="button" role="tab" aria-controls="pills-seguridad" aria-selected="false">Tuerca de seguridad tipo piñón</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-success" id="pills-botelle-tab" data-bs-toggle="pill" data-bs-target="#pills-botelle" type="button" role="tab" aria-controls="pills-botelle" aria-selected="false">Tuerca de seguridad tipo botella</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="pills-seguridad" role="tabpanel" aria-labelledby="pills-seguridad-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="pills-botelle" role="tabpanel" aria-labelledby="pills-botelle-tab" tabindex="0">...</div>
+            </div>
           </div>
-          <div class="col-lg-8">
-            <table class="table table-striped">
-              <thead class="t-head">
-                <tr>
-                  <th scope="col">Descripción</th>
-                  <th scope="col">Medidas</th>
-                  <th scope="col">Rosca</th>
-                </tr>
-              </thead>
-              <tbody id="your-table-body-id">
-                
-              </tbody>
-            </table>
-          </div>
+          
 
           <div class="col-lg-3">
             <div class="portfolio-info">
