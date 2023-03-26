@@ -26,6 +26,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/products-details.css" rel="stylesheet">
   <link href="assets/vendor/package/dist/sweetalert2.min.css" rel="stylesheet">
+  <link href="assets/css/tablas/tabla_estilo_funicion.css" rel="stylesheet">
 
 </head>
 
@@ -149,14 +150,1005 @@
               <li class="nav-item" role="presentation">
                 <button class="btn btn-outline-success" id="pills-botelle-tab" data-bs-toggle="pill" data-bs-target="#pills-botelle" type="button" role="tab" aria-controls="pills-botelle" aria-selected="false">Tuerca de seguridad tipo botella</button>
               </li>
-            </ul>
+            </ul><br>
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-seguridad" role="tabpanel" aria-labelledby="pills-seguridad-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-botelle" role="tabpanel" aria-labelledby="pills-botelle-tab" tabindex="0">...</div>
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca1" data-bs-toggle="pill" data-bs-target="#mmrosca1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="tabpulgadarosca1" data-bs-toggle="pill" data-bs-target="#pulgadarosca1" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pulgadas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablaa" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden>id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>9mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Hex. 9mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>9mm</th>
+                            <td>1,25</td>
+                            <td>9/16"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pulgadarosca1" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablab" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idb">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>3/8"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca para Guía 3/8"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>3/8"</th>
+                            <td>24H</td>
+                            <td>5/8"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>7/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca para Guía 7/16"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>7/16"</th>
+                            <td>20H</td>
+                            <td>3/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>1/2"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca para Guía 1/2"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>1/2"</th>
+                            <td>20H</td>
+                            <td>3/4"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca2" data-bs-toggle="pill" data-bs-target="#mmrosca2" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="tabpulgadarosca2" data-bs-toggle="pill" data-bs-target="#pulgadarosca2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pulgadas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca2" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablac" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idc">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>12mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 12mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>12mm</th>
+                            <td>1,00</td>
+                            <td>3/4"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>12mm</th>
+                            <td>1,25</td>
+                            <td>3/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>14mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 14mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>14mm</th>
+                            <td>1,00</td>
+                            <td>7/8"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>14mm</th>
+                            <td>1,50</td>
+                            <td>7/8"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>16mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 16mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>16mm</th>
+                            <td>1,00</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>16mm</th>
+                            <td>1,50</td>
+                            <td>1"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>18mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 18mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>10</td>
+                            <th hidden>18mm</th>
+                            <td>1,00</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>11</td>
+                            <th hidden>18mm</th>
+                            <td>1,50</td>
+                            <td>1"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pulgadarosca2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablad" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idd">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>11/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 11/16"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>11/16"</th>
+                            <td>16H</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>11/16"</th>
+                            <td>18H</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>11/16"</th>
+                            <td>20H</td>
+                            <td>1"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>3/4"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 3/4"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>3/4"</th>
+                            <td>16H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>3/4"</th>
+                            <td>20H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>3/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Plana Baja 3/16"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>3/16"</th>
+                            <td>16H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>3/16"</th>
+                            <td>20H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca3" data-bs-toggle="pill" data-bs-target="#mmrosca3" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="tabpulgadarosca3" data-bs-toggle="pill" data-bs-target="#pulgadarosca3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pulgadas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca3" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablae" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="ide">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>16mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 16mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>16mm</th>
+                            <td>1,00</td>
+                            <td>1"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>18mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 18mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>18mm</th>
+                            <td>1,50</td>
+                            <td>1"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>19mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 19mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>19mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>20mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 20mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>20mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>22mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 22mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>22mm</th>
+                            <td>1,50</td>
+                            <td>1-1/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>10</td>
+                            <th hidden>24mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 24mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>11</td>
+                            <th hidden>24mm</th>
+                            <td>1,50</td>
+                            <td>1-3/8"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="pulgadarosca3" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablaf" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idf">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+
+                          
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>9/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 9/16"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>9/16"</th>
+                            <td>18H</td>
+                            <td>1"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>11/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 11/16"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>11/16"</th>
+                            <td>16H</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>11/16"</th>
+                            <td>18H</td>
+                            <td>1"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>11/16"</th>
+                            <td>20H</td>
+                            <td>1"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>3/4"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 3/4"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>3/4"</th>
+                            <td>16H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>3/4"</th>
+                            <td>20H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>13/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 13/16"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>10</td>
+                            <th hidden>13/16"</th>
+                            <td>18H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>11</td>
+                            <th hidden>13/16"</th>
+                            <td>20H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>12</td>
+                            <th hidden>7/8"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 7/8"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>13</td>
+                            <th hidden>7/8"</th>
+                            <td>16H</td>
+                            <td>1-1/4"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>14</td>
+                            <th hidden>7/8"</th>
+                            <td>20H</td>
+                            <td>1-1/4"</td>
+                          </tr>
+
+                          
+                          <tr>
+                            <td hidden>15</td>
+                            <th hidden>1"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Ranurada 1"</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>16</td>
+                            <th hidden>1"</th>
+                            <td>14H</td>
+                            <td>1-1/2"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca4" data-bs-toggle="pill" data-bs-target="#mmrosca4" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="tabpulgadarosca4" data-bs-toggle="pill" data-bs-target="#pulgadarosca4" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pulgadas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca4" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablag" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idg">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>14mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 14mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>14mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>16mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 16mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>16mm</th>
+                            <td>1,50</td>
+                            <td>1"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>18mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 18mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>18mm</th>
+                            <td>1,50</td>
+                            <td>1-1/8"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pulgadarosca4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablah" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idh">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>1/2"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 1/2"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>1/2"</th>
+                            <td>20H</td>
+                            <td>3/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>3/4"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 3/4"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>3/4"</th>
+                            <td>16H</td>
+                            <td>1-1/2"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>5/8"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 5/8"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>5/8"</th>
+                            <td>18H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>9/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 9/16"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>9/16"</th>
+                            <td>18H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>11/16"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Cónica 11/16"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>11/16"</th>
+                            <td>16H</td>
+                            <td>1-1/8"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="tab-pane fade" id="pills-seguridad" role="tabpanel" aria-labelledby="pills-seguridad-tab" tabindex="0">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca5" data-bs-toggle="pill" data-bs-target="#mmrosca5" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="tabpulgadarosca5" data-bs-toggle="pill" data-bs-target="#pulgadarosca5" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pulgadas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca5" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablai" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idi">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>18mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 18mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>18mm</th>
+                            <td>1,50</td>
+                            <td>1"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>19mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 19mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>19mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>20mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 20mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>20mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>22mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 22mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>22mm</th>
+                            <td>1,50</td>
+                            <td>1-1/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>24mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 24mm</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>24mm</th>
+                            <td>1,50</td>
+                            <td>1-3/8"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pulgadarosca5" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px">
+                      <table id="tablaj" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idj">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>3/4"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 3/4"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>3/4"</th>
+                            <td>16H</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>7/8"</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Piñón 7/8"</th>
+                            <td hidden></td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>7/8"</th>
+                            <td>14H</td>
+                            <td>1-1/4"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>7/8"</th>
+                            <td>20H</td>
+                            <td>1-1/4"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="tab-pane fade" id="pills-botelle" role="tabpanel" aria-labelledby="pills-botelle-tab" tabindex="0">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary active" id="tabmmrosca6" data-bs-toggle="pill" data-bs-target="#mmrosca6" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Milimetros</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="mmrosca6" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <div class="container" style="margin-top: 10px;padding: 5px"> 
+                      <table id="tablak" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th hidden id="idk">id</th>
+                            <th hidden>medida</th>
+                            <th>Tipo de rosca</th>
+                            <th>Material</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td hidden>0</td>
+                            <th hidden>16mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 16mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>1</td>
+                            <th hidden>16mm</th>
+                            <td>1,50</td>
+                            <td>13/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>2</td>
+                            <th hidden>16mm</th>
+                            <td>1,50 L</td>
+                            <td>13/16"</td>
+                          </tr>
+
+
+                          <tr>
+                            <td hidden>3</td>
+                            <th hidden>18mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 18mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>4</td>
+                            <th hidden>18mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+                          <tr>
+                            <td hidden>5</td>
+                            <th hidden>18mm</th>
+                            <td>1,50 L</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>6</td>
+                            <th hidden>19mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 19mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>7</td>
+                            <th hidden>19mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>8</td>
+                            <th hidden>20mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 20mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>9</td>
+                            <th hidden>20mm</th>
+                            <td>1,50</td>
+                            <td>1-1/16"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>10</td>
+                            <th hidden>22mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 22mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>11</td>
+                            <th hidden>22mm</th>
+                            <td>1,50</td>
+                            <td>1-1/4"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>12</td>
+                            <th hidden>24mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 24mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>13</td>
+                            <th hidden>24mm</th>
+                            <td>1,50</td>
+                            <td>1-3/8"</td>
+                          </tr>
+
+                          <tr>
+                            <td hidden>14</td>
+                            <th hidden>26mm</th>
+                            <th style="text-align: center; background-color: #B5D260" colspan="2">Tuerca Seguridad Tipo Botella 26mm</th>
+                            <td hidden></td>
+                          </tr>
+                          <tr>
+                            <td hidden>15</td>
+                            <th hidden>26mm</th>
+                            <td>1,50</td>
+                            <td>1-3/8"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
             </div>
           </div>
           
@@ -259,6 +1251,80 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/vendor/package/dist/sweetalert2.min.js"></script>
 
+  <script src="assets/js/tabla/jQuery.6.3.3.js"></script>
+  <script src="assets/js/tabla/lenguage_tabla.js"></script>
+  <script src="assets/js/tabla/datatable_jquery.js"></script>
+  <script src="assets/js/tabla/databla_style.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById("tabpulgadarosca1").onclick = function () {
+      $('#idb').trigger('click');
+      $('#idb').trigger('click');
+    }
+  </script>
+
+<script type="text/javascript">
+  document.getElementById("pills-profile-tab").onclick = function () {
+    $('#idc').trigger('click');
+    $('#idc').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("tabpulgadarosca2").onclick = function () {
+    $('#idd').trigger('click');
+    $('#idd').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("pills-contact-tab").onclick = function () {
+    $('#ide').trigger('click');
+    $('#ide').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("tabpulgadarosca3").onclick = function () {
+    $('#idf').trigger('click');
+    $('#idf').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("pills-disabled-tab").onclick = function () {
+    $('#idg').trigger('click');
+    $('#idg').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("tabpulgadarosca4").onclick = function () {
+    $('#idh').trigger('click');
+    $('#idh').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("pills-seguridad-tab").onclick = function () {
+    $('#idi').trigger('click');
+    $('#idi').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("tabpulgadarosca5").onclick = function () {
+    $('#idj').trigger('click');
+    $('#idj').trigger('click');
+  }
+</script>
+
+<script type="text/javascript">
+  document.getElementById("pills-botelle-tab").onclick = function () {
+    $('#idk').trigger('click');
+    $('#idk').trigger('click');
+  }
+</script>
 </body>
 
 </html>

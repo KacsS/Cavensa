@@ -1,3 +1,7 @@
+///descripcion, medida, rosca
+
+//cambiar medida por tipo de rosca, y donde dice rosca debe decir material
+
 const hexagonal = [
     ['Hex. 9mm', '1,25', '9/16"']
 ];
