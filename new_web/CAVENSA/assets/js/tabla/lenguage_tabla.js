@@ -22,7 +22,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 1080,
         lengthMenu: [ [22, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 1080,
         lengthMenu: [ [21, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -81,7 +81,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 1080,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -110,7 +110,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 700,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -316,7 +316,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 700,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -345,7 +345,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 700,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -374,7 +374,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 700,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -403,7 +403,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 835,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -432,7 +432,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 500,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -461,7 +461,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 500,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -490,7 +490,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 500,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
@@ -548,7 +548,7 @@ $(document).ready(function () {
                 sortDescending: ": active para ordenar la columna en orden descendente"
             }
         },
-        scrollY: 350,
+        scrollY: 790,
         lengthMenu: [ [20, 25, -1], [10, 25, "All"] ],
     });
 });
